@@ -8,8 +8,11 @@
 * [How it is Made](#how-it-is-made)
 
 [GitHub Layout and Navigation](#github-layout-and-navigation)
+
 [Hardware Requirements](#hardware-requirements)
+
 [Drum Set Design](#drum-set-design)
+
 [Acknowledgements](#acknowledgements)
 
 ## Introduction
