@@ -1,13 +1,13 @@
 # eyeBeatRevolution
 ## Table of Contents
-1. [Introduction](Introduction)
-  1. [Music with Eyes](Music with Eyes)
-  2. [Team Collaborators](Team Collaborators)
-  3. [How it is Made](How it is Made)
-2. [GitHub Layout and Navigation](GitHub Layout and Navigation)
-3. [Hardware Requirements](Hardware Requirements)
-4. [Drum Set Design](Drum Set Design)
-5. [Acknowledgements](Acknowledgements)
+1. [Introduction](#Introduction)
+  1. [Music with Eyes](#Music with Eyes)
+  2. [Team Collaborators](#Team Collaborators)
+  3. [How it is Made](#How it is Made)
+2. [GitHub Layout and Navigation](#GitHub Layout and Navigation)
+3. [Hardware Requirements](#Hardware Requirements)
+4. [Drum Set Design](#Drum Set Design)
+5. [Acknowledgements](#Acknowledgements)
 
 ## Introduction
 ### Music with Eyes
