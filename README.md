@@ -1,4 +1,5 @@
 # eyeBeatRevolution
+![alt text](/eyeBeatLogo.jpg)
 ## Table of Contents
 1. [Introduction](#introduction)
   1. [Music with Eyes](#music-with-eyes1)
