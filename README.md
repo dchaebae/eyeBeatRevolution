@@ -2,25 +2,27 @@
 ![alt text](/eyeBeatRevolutionLogo.jpg)
 ## Table of Contents
 [Introduction](#introduction)
-* [Music with Eyes](#intro1)
-* [Team Collaborators](#intro2)
-* [How it is Made](#intro3)
+
+* [Music with Eyes](#music-with-eyes)
+* [Team Collaborators](#team-collaborators)
+* [How it is Made](#how-it-is-made)
+
 [GitHub Layout and Navigation](#github-layout-and-navigation)
 [Hardware Requirements](#hardware-requirements)
 [Drum Set Design](#drum-set-design)
 [Acknowledgements](#acknowledgements)
 
 ## Introduction
-### Music with Eyes <a name="intro1"></a>
+### Music with Eyes
 eyeBeat Revolution is a virtual reality (VR) app on which individuals with low hand/arm mobility can play instruments via eye-tracking. The project is aimed at making performance arts (playing music) accessible for people who would normally be unable to participate through conventional means. For instance, patients with certain types of muscular dystrophy affecting the hand and/or arms can learn how to play drums in an immersive VR platform.
 
-### Team Collaborators <a name="intro2"></a>
+### Team Collaborators
 The eyeBeat Revolution team consists of three Princeton University undergraduate students enrolled in IW 07: Mobile Computing Design for Assistive Technology.
 * Daniel Chae (2020) - 3D Object Design and Instrument Interface
 * Leora Huebner (2019) - Music and Feedback
 * Ayushi Sinha (2020) - Menu Interface and User Design
 
-### How it is Made <a name="intro3"></a>
+### How it is Made
 In essence, eyeBeat Revolution is a "game" built on [Unity](https://unity3d.com/). The 3D environments and objects are rendered on Unity. The main instruments are designed on [Blender](https://www.blender.org/) and imported into Unity. The [Fove 0 VR headset](https://www.getfove.com/) and C# scripts were used to utilize eye-tracking features and implement immersive environments.
 
 ## Hardware Requirements
