@@ -33,17 +33,21 @@ In order to use the Fove 0 VR headset, basic hardware requirements must be met:
 
 ## GitHub Layout and Navigation
 Most of the files that are found here are simply byproducts and caches. The 3D objects and their blender files (and rendered images) can be found in
-'''bash
+```sh
 eyebeatRevolution/Assets/3dobjects
-'''
+```
 The main C# scripts are found in 
-'''bash
+```sh
 eyeBeatRevolution/Assets/Scripts
-'''
+```
 Textures and materials can be found in their respective folders in the Assets folder.
 
 ## Drum Set Design
 The drum set is the main instrument and below is an outline of the design process on Blender.
+The final rendering of the drum set was made on Blender Cycles before being imported into Unity
+![alt text](/Assets/3dobjects/drumset/finalizedDrumset.png)
+
+The design process for the drums can be seen in the [design process folder](https://github.com/dchaebae/eyeBeatRevolution/tree/master/Assets/3dobjects/drumset/DesignProcess)
 
 ## Acknowledgements
 We would like to thank the following individuals/groups:
