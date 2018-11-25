@@ -51,8 +51,8 @@ The design process for the drums can be seen in the [design process folder](http
 
 ## Acknowledgements
 We would like to thank the following individuals/groups:
-*Professor Kyle Jamieson
-*Colleen Kenny
-*Fellow IW 07 Students
-*Princeton Computer Science Department Faculty
-*Princeton Computer Science & BSE Departments (funding)
+* Professor Kyle Jamieson
+* Colleen Kenny
+* Fellow IW 07 Students
+* Princeton Computer Science Department Faculty
+* Princeton Computer Science & BSE Departments (funding)
