@@ -1,14 +1,14 @@
 # eyeBeatRevolution
 ![alt text](/eyeBeatRevolutionLogo.jpg)
 ## Table of Contents
-1. [Introduction](#introduction)
-  1. [Music with Eyes](#intro1)
-  2. [Team Collaborators](#intro2)
-  3. [How it is Made](#intro3)
-2. [GitHub Layout and Navigation](#github-layout-and-navigation)
-3. [Hardware Requirements](#hardware-requirements)
-4. [Drum Set Design](#drum-set-design)
-5. [Acknowledgements](#acknowledgements)
+[Introduction](#introduction)
+* [Music with Eyes](#intro1)
+* [Team Collaborators](#intro2)
+* [How it is Made](#intro3)
+[GitHub Layout and Navigation](#github-layout-and-navigation)
+[Hardware Requirements](#hardware-requirements)
+[Drum Set Design](#drum-set-design)
+[Acknowledgements](#acknowledgements)
 
 ## Introduction
 ### Music with Eyes <a name="intro1"></a>
