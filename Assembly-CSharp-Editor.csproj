@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Chunity\Scripts\Editor\ChuckExecutionOrder.cs" />
     <Compile Include="Assets\FoveUnityPlugin\Source\Editor\FoveInterfaceBaseEditor.cs" />
     <Compile Include="Assets\FoveUnityPlugin\Source\Editor\FoveInterfaceEditor.cs" />
     <Compile Include="Assets\FoveUnityPlugin\Source\Editor\FoveSettingsEditor.cs" />

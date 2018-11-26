@@ -61,6 +61,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Chunity\Scripts\Chuck.cs" />
+    <Compile Include="Assets\Chunity\Scripts\ChuckMainInstance.cs" />
+    <Compile Include="Assets\Chunity\Scripts\ChuckSubInstance.cs" />
+    <Compile Include="Assets\Chunity\Scripts\Utility\ChuckEventListener.cs" />
+    <Compile Include="Assets\Chunity\Scripts\Utility\ChuckFloatSyncer.cs" />
+    <Compile Include="Assets\Chunity\Scripts\Utility\ChuckIntSyncer.cs" />
+    <Compile Include="Assets\Chunity\Scripts\Utility\ChuckStringSyncer.cs" />
+    <Compile Include="Assets\Chunity\Scripts\Utility\TheChuck.cs" />
     <Compile Include="Assets\FoveUnityPlugin\Source\Behaviours\FoveEyeCamera.cs" />
     <Compile Include="Assets\FoveUnityPlugin\Source\Behaviours\FoveInterface.cs" />
     <Compile Include="Assets\FoveUnityPlugin\Source\Behaviours\FoveInterface2.cs" />
