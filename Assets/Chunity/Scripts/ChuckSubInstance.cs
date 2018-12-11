@@ -27,7 +27,7 @@ public class ChuckSubInstance : MonoBehaviour
     // desc: whether to spatialize this ChuckSubInstance
     // ----------------------------------------------------
     [Tooltip( "Whether to spatialize this ChuckSubInstance" )]
-    public bool spatialize = true;
+    public bool spatialize = false;
 
 
 
@@ -212,7 +212,7 @@ public class ChuckSubInstance : MonoBehaviour
     // ----------------------------------------------------
     public bool BroadcastEvent( string variableName )
     {
-        return chuckMainInstance.SignalEvent( variableName );
+        return chuckMainInstance.BroadcastEvent( variableName );
     }
 
 

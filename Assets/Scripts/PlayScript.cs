@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 public class PlayScript : MonoBehaviour {
     public Light attachedLight;
     public FoveInterfaceBase foveInterface;
-    public ChuckSubInstance audio;
+    public ChuckSubInstance audiok;
     public AudioSource attachedClip; 
 
     private Collider instrument_face;
@@ -43,15 +43,16 @@ public class PlayScript : MonoBehaviour {
         if (light_material == null)
             gameObject.SetActive(false);
 
-        if (audio == null)
-            audio = GetComponent<ChuckSubInstance>();
+        if (audiok == null)
+            audiok = GetComponent<ChuckSubInstance>();
 
-        if (audio)
+        if (audiok)
         {
             audio_enabled = true;
             audio_toggle = false;
-        }
-        GetComponent<ChuckSubInstance>().RunCode(@"
+
+
+            GetComponent<ChuckSubInstance>().RunCode(@"
             fun void playHH() {
                 Noise n => HPF f => ADSR e => dac;
                 f.freq(7000.0);
@@ -67,7 +68,7 @@ public class PlayScript : MonoBehaviour {
                 spork~playHH();
             }");
 
-        GetComponent<ChuckSubInstance>().RunCode(@"
+            GetComponent<ChuckSubInstance>().RunCode(@"
             class Toms 
             { 
                 Impulse i; // the attack 
@@ -157,7 +158,7 @@ public class PlayScript : MonoBehaviour {
                 spork~playTom(Choice);
             }
 ");
-   
+        }
     }
 
 	
