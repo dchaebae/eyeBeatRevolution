@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scripts\FOVE3DCursor.cs" />
     <Compile Include="Assets\Scripts\ManualDriftCorrection.cs" />
     <Compile Include="Assets\Scripts\PlayScript.cs" />
+    <Compile Include="Assets\transparent.cs" />
     <None Include="Assets\Chunity\2. SETUP and TUTORIALS.txt" />
     <None Include="Assets\Chunity\3. REFERENCE.txt" />
     <None Include="Assets\FoveUnityPlugin\Resources\EyeShaderInverted.shader" />
