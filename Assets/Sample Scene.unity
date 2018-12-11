@@ -935,7 +935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedLight: {fileID: 2101066272}
   foveInterface: {fileID: 728606689}
-  audio: {fileID: 0}
+  audiok: {fileID: 0}
   attachedClip: {fileID: 0}
 --- !u!1 &381158387 stripped
 GameObject:
@@ -974,7 +974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedLight: {fileID: 298579109}
   foveInterface: {fileID: 728606689}
-  audio: {fileID: 0}
+  audiok: {fileID: 0}
   attachedClip: {fileID: 0}
 --- !u!82 &381158391
 AudioSource:
@@ -1809,7 +1809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedLight: {fileID: 6917664}
   foveInterface: {fileID: 728606689}
-  audio: {fileID: 0}
+  audiok: {fileID: 0}
   attachedClip: {fileID: 0}
 --- !u!64 &911622769
 MeshCollider:
@@ -1956,7 +1956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedLight: {fileID: 341930271}
   foveInterface: {fileID: 728606689}
-  audio: {fileID: 0}
+  audiok: {fileID: 0}
   attachedClip: {fileID: 0}
 --- !u!64 &941942471
 MeshCollider:
@@ -2765,7 +2765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedLight: {fileID: 1475968865}
   foveInterface: {fileID: 728606689}
-  audio: {fileID: 0}
+  audiok: {fileID: 0}
   attachedClip: {fileID: 0}
 --- !u!82 &1204378814
 AudioSource:
@@ -3844,7 +3844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedLight: {fileID: 1670019092}
   foveInterface: {fileID: 728606689}
-  audio: {fileID: 0}
+  audiok: {fileID: 0}
   attachedClip: {fileID: 0}
 --- !u!64 &1733494842
 MeshCollider:
@@ -4302,7 +4302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attachedLight: {fileID: 1239221761}
   foveInterface: {fileID: 728606689}
-  audio: {fileID: 0}
+  audiok: {fileID: 0}
   attachedClip: {fileID: 0}
 --- !u!64 &2115516684
 MeshCollider:
