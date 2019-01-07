@@ -16,10 +16,12 @@ public class PlayScript : MonoBehaviour {
     private bool clip_toggle = false;
     private bool audio_enabled = false;
     private bool audio_toggle = false;
+    private GameObject[] gos;
 
 	// Use this for initialization
 	void Start () {
         instrument_face = GetComponent<Collider>();
+        gos = GameObject.FindGameObjectsWithTag("song");
 
         if (attachedLight == null)
             attachedLight = transform.GetComponentInChildren<Light>(); // get the light component
@@ -67,6 +69,72 @@ public class PlayScript : MonoBehaviour {
                 HHImpact => now;
                 spork~playHH();
             }");
+
+            GetComponent<ChuckSubInstance>().RunCode(@"
+            fun void playSnare() 
+            {
+                Noise n => BPF f => ADSR e => dac;
+                TriOsc t => ADSR te => dac;
+                TriOsc t2 => ADSR te2 => dac;
+                TriOsc q => ADSR qe => dac;
+                q.freq(20.0);
+                qe.set(2::ms, 500::ms, 0.0, 100::ms);
+                q.gain(0.03);
+                t.freq(108);
+                n.gain(.8);
+                t.gain(.03);
+                te.set(2::ms, 200::ms, 0.0, 100::ms);
+                t2.freq(120);
+                t2.gain(.02);
+                te2.set(2::ms, 100::ms, 0.0, 100::ms);
+                f.freq(200);
+                f.Q(0.4);
+                e.set(2::ms, (80+Math.random2(0, 60))::ms, 0.0, 100::ms);
+                qe.keyOn();
+                e.keyOn();
+                te.keyOn();
+                te2.keyOn();
+                100::ms => now;
+            }
+            global Event SImpact;
+            while(true)
+            {
+                SImpact => now;
+                spork~playSnare();
+}
+");
+
+            GetComponent<ChuckSubInstance>().RunCode(@"
+            fun void playBass()
+            {
+                Noise n => LPF f => ADSR ne => dac;
+                TriOsc s => ADSR e => dac;
+                TriOsc s1 => ADSR e1 => dac;
+                TriOsc q => ADSR qe => dac;
+                q.freq(20.0);
+                qe.set(2::ms, 500::ms, 0.0, 100::ms);
+                q.gain(0.03);
+                n.gain(.9);
+                s.gain(.08);
+                s1.gain(.05);
+                f.freq(500.0);
+                ne.set(2::ms, 40::ms, 0.0, 100::ms);
+                s.freq(72.0);
+                s1.freq(124.0);
+                e.set(2::ms, (80+Math.random2(0,40))::ms, 0.0, 100::ms);
+                e1.set(2::ms, 70::ms, 0.0, 100::ms);
+                qe.keyOn();
+                e1.keyOn();
+                e.keyOn();
+                ne.keyOn();
+                100::ms => now;
+            }
+            global Event BImpact;
+            while(true)
+            {
+                BImpact => now;
+                spork~playBass();
+}");
 
             GetComponent<ChuckSubInstance>().RunCode(@"
             class Toms 
@@ -156,8 +224,7 @@ public class PlayScript : MonoBehaviour {
             {
                 TImpact => now;
                 spork~playTom(Choice);
-            }
-");
+            }");
         }
     }
 
@@ -177,6 +244,16 @@ public class PlayScript : MonoBehaviour {
 
             if (clip_attached && !clip_toggle)
             {
+
+                if (instrument_face.gameObject.CompareTag("song"))
+                {
+
+                    foreach (GameObject o in gos)
+                    {
+                        AudioSource aud = o.GetComponent<AudioSource>();
+                        aud.Stop();
+                    }
+                }
                 attachedClip.Play();
                 clip_toggle = true;
             }
@@ -186,7 +263,14 @@ public class PlayScript : MonoBehaviour {
                 if (instrument_face.gameObject.CompareTag("HH"))
                 {
                     GetComponent<ChuckSubInstance>().BroadcastEvent("HHImpact");
-                    audio_toggle = true;
+                }
+                else if (instrument_face.gameObject.CompareTag("S"))
+                {
+                    GetComponent<ChuckSubInstance>().BroadcastEvent("SImpact");
+                }
+                else if (instrument_face.gameObject.CompareTag("B"))
+                {
+                    GetComponent<ChuckSubInstance>().BroadcastEvent("BImpact");
                 }
                 else if (instrument_face.gameObject.CompareTag("Th"))
                 {
@@ -203,7 +287,21 @@ public class PlayScript : MonoBehaviour {
                     GetComponent<ChuckSubInstance>().SetInt("Choice", 3);
                     GetComponent<ChuckSubInstance>().BroadcastEvent("TImpact");
                 }
-                    
+                else if (instrument_face.gameObject.CompareTag("2hs"))
+                {
+                    GetComponent<ChuckSubInstance>().BroadcastEvent("SImpact");
+                    GetComponent<ChuckSubInstance>().BroadcastEvent("HHImpact");
+                }
+                else if (instrument_face.gameObject.CompareTag("2bs"))
+                {
+                    GetComponent<ChuckSubInstance>().BroadcastEvent("BImpact");
+                    GetComponent<ChuckSubInstance>().BroadcastEvent("SImpact");
+                }
+                else if (instrument_face.gameObject.CompareTag("2hb"))
+                {
+                    GetComponent<ChuckSubInstance>().BroadcastEvent("BImpact");
+                    GetComponent<ChuckSubInstance>().BroadcastEvent("HHImpact");
+                }
                 audio_toggle = true;
             }
         }

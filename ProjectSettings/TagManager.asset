@@ -10,6 +10,10 @@ TagManager:
   - Tl
   - S
   - B
+  - song
+  - 2hb
+  - 2hs
+  - 2bs
   layers:
   - Default
   - TransparentFX

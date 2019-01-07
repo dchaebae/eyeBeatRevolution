@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 81
+  controlID: 77
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 82
+  controlID: 78
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 83
+  controlID: 79
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -354,20 +354,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Packages/com.unity.textmeshpro
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Packages/com.unity.textmeshpro
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\danie\OneDrive\Documents\eyeBeatRevolution
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 149}
-    m_SelectedIDs: aa0a0000
-    m_LastClickedID: 2730
-    m_ExpandedIDs: 00000000020a0000400a0000aa0a0000f20c000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 107.99988}
+    m_SelectedIDs: f60d0000
+    m_LastClickedID: 3574
+    m_ExpandedIDs: 000000003e0b0000880b00000c0c0000c20e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -395,7 +395,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000020a0000400a0000
+    m_ExpandedIDs: 000000003e0b0000880b00000c0c0000c20e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -510,10 +510,10 @@ MonoBehaviour:
     height: 423
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 570}
-    m_SelectedIDs: 02b7f3ff
-    m_LastClickedID: -805118
-    m_ExpandedIDs: 5a39f1ff60cff1ffd4abf2ff02b7f3ff7abbf3fff6e4f3ff7ef1f5ff7400f6ffc6c7fbfff83dfeffcee2ffff0afbffff16fbffff00000000e22f00002630000046300000fa300000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 3e330000
+    m_LastClickedID: 13118
+    m_ExpandedIDs: 0afbffff14fbffff16fbffff000000003e330000f2330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.20107421, y: 0.058179043, z: -0.011962777, w: -0.97777367}
     speed: 2
-    m_Value: {x: -0.20107421, y: 0.058179043, z: -0.011962777, w: -0.97777367}
+    m_Value: {x: -0.20107421, y: 0.058179043, z: -0.011962777, w: -0.9777736}
   m_Size:
     m_Target: 10.436923
     speed: 2
@@ -674,18 +674,18 @@ MonoBehaviour:
       y: 17
       width: 935
       height: 406
-    m_Scale: {x: 1.3202606, y: 1.3202606}
-    m_Translation: {x: 464.2827, y: 203.33707}
+    m_Scale: {x: 1.4732082, y: 1.4732082}
+    m_Translation: {x: 440.2685, y: 187.64333}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -351.65988
-      y: -154.01282
-      width: 708.1935
-      height: 307.51505
+      x: -298.85016
+      y: -127.370544
+      width: 634.6693
+      height: 275.58902
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
